@@ -1,0 +1,44 @@
+#page {
+	display: block;
+	/*margin: 1em;*/
+}
+#primary {
+	/*float: left;
+	margin: 0 -240px 0 0;*/
+	width: 100%;
+}
+#content {
+	/*margin: 0 280px 0 0;*/
+
+	img {
+		&.left {
+			clear: left;
+			margin-right: 20px;
+		}
+
+		&.right {
+			clear: right;
+			margin-left: 20px;
+		}
+	}
+}
+#main .widget-area {
+	float: right;
+	overflow: hidden;
+	width: 220px;
+}
+
+/* Increase the size of the content area for templates without sidebars */
+.full-width #content,
+.image-attachment #content,
+.error404 #content {
+	margin: 0;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text,
+.assistive-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}

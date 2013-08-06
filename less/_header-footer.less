@@ -1,0 +1,141 @@
+/* =Header
+-------------------------------------------------------------- */
+
+// Header fixed at top of page
+// TODO: Use media queries to make this working for smaller widths
+#branding {
+	color: @header-text-color;
+	background: @header-bg-color;
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+	height: @header-height;
+	z-index: 99;
+
+	a {
+		color: @header-text-color;
+	}
+}
+
+#site-title {
+	.logo-font;
+	margin: 15px 0;
+}
+
+// Ensure that header doesn't overlay other content at top of page
+.header-flow {
+	background: @saints-blue; // So combination of #branding + this looks nice
+	height: @header-height; // Height of #branding
+}
+
+
+/* =Menu
+-------------------------------------------------------------- */
+
+#access {
+	display: block;
+	float: right;
+	font-weight: bold;
+	
+	.menu {
+		margin: 18px 0;
+		float: right;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+	}
+	li {
+		float: left;
+		position: relative;
+		font-size: 14px;
+
+		a {
+			border-radius: 5px;
+		}
+
+		&:hover {
+			a {
+				background: lighten(@header-bg-color, 20%);
+			}
+		}
+
+		.js & {
+			&:hover {
+				a {
+					background: none;
+				}
+			}
+		}
+	}
+	a {
+		display: block;
+		line-height: 2em;
+		padding: 0 1em;
+		text-decoration: none;
+	}
+}
+
+
+/* =Content Header
+-------------------------------------------------------------- */
+
+.entry-header {
+	//background: url("../img/team-2012-edit.png") no-repeat @pageheader-bg-color;
+	background: @pageheader-bg-color;
+	color: @pageheader-text-color;
+
+	h1, h2, h3, h4, h5, h6 {
+		color: @pageheader-text-color;
+	}
+
+	div, dl, dt, dd, ul, ol, li, pre, form, p, blockquote, th, td {
+		color: @pageheader-text-color;
+	}
+
+	.entry-title {
+		font-weight: 400;
+		margin: 40px 0;
+	}
+
+	// Aside posts
+	.format-aside & {
+		display: none;
+
+		.single & {
+			display: block;
+		}
+	}
+
+	// Image posts
+	.format-image & {
+		display: none;
+
+		.single & {
+			display: block;
+		}
+	}
+}
+
+
+/* =Footer
+-------------------------------------------------------------- */
+
+#colophon {
+	clear: both;
+	display: block;
+	padding: 20px 0;
+	background: @footer-bg-color;
+	color: @footer-text-color;
+
+	div, dl, dt, dd, ul, ol, li, pre, form, p, blockquote, th, td {
+		color: @footer-text-color;
+	}
+
+	small {
+		font-size: 13px;
+		display: block;
+	}
+}

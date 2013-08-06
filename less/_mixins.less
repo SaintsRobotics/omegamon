@@ -1,0 +1,51 @@
+// Base
+@creolio-blue: #47AEDE;
+
+@saints-blue: #16406E;
+@saints-light-blue: #497DB7;
+@saints-sky-blue: #668CB7;
+@saints-navy-blue: #072648;
+
+@google-blue: #207FD1;
+
+@dark-gray: #383838;
+@text-white: #EFEFEF;
+
+// Fonts
+@backup-fonts: "Helvetica Neue", Helvetica, sans-serif;
+
+.font (@family: "Open Sans", @weight: 400, @size: 14px, @lineheight: 1.5) {
+	font: normal @weight @size~"/"@lineheight @family, @backup-fonts;
+}
+
+@text-size: 14px;
+@text-line-height: 1.5;
+
+.logo-font () {
+	.font("Patua One", 300, 36px, 1);
+}
+.heading-font () {
+	.font("Open Sans", 300, 36px, 1);
+}
+.text-font () {
+	.font("Open Sans", 400, @text-size, @text-line-height);
+}
+
+// Colors
+@header-bg-color: rgba(7, 38, 72, 0.85);
+@header-text-color: @text-white;
+
+@pageheader-bg-color: @saints-blue;
+@pageheader-text-color: @text-white;
+
+@footer-bg-color: @dark-gray;
+@footer-text-color: @text-white;
+
+@page-bg-color: rgba(251, 251, 251, 0.9);
+@text-color: #333;
+
+@link-color: @google-blue;
+@link-hover-color: lighten(@link-color, 15%);
+
+// Text sizes
+@header-height: 68px;

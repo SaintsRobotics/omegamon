@@ -1,0 +1,138 @@
+/* =Typography
+-------------------------------------------------------------- */
+
+body, div, dl, dt, dd, ul, ol, li, pre, form, p, blockquote, th, td {
+	.text-font;
+	color: @text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	.heading-font;
+}
+
+h2, h3, h4, h5, h6 {
+	margin: 32px 0 14px;
+}
+
+h1 {
+	font-size: 44px;
+}
+
+h2 {
+	font-size: 37px;
+	margin: 32px 0 18px;
+}
+
+h3 {
+	font-size: 27px;
+}
+
+h4 {
+	font-size: 23px;
+}
+
+h5 {
+	font-size: 17px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+a {
+	color: @link-color;
+
+	&:hover, &:active {
+		color: @link-hover-color;
+	}
+}
+
+
+/* =Lists
+-------------------------------------------------------------- */
+
+ul, ol, dl {
+	list-style-position: inside;
+	margin-left: 10px;
+}
+
+
+/* =Images
+-------------------------------------------------------------- */
+
+a img {
+	border: none;
+}
+p img {
+	margin-bottom: 0.5em; /* a small bottom margin prevents content floating under images */
+}
+/*
+Resize images to fit the main content area.
+- Applies only to images uploaded via WordPress by targeting size-* classes.
+- Other images will be left alone. Use "size-auto" class to apply to other images.
+*/
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img,
+.widget-area img,
+.wp-caption {
+	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+	height: auto; /* Override height to match resized width for correct aspect ratio. */
+}
+
+.caption, .wp-caption {
+	text-align: center;
+	margin: 0 0 1.5em;
+
+	img {
+
+	}
+	.wp-caption-text {
+		margin: 0 0.5em;
+	}
+	p {
+		margin: 0;
+	}
+}
+.alignleft, .left {
+	&.caption, &.wp-caption, img& {
+		display: block;
+		margin-right: 1em;
+		clear: left;
+	}
+
+	p&, p & {
+		margin: 0;
+	}
+}
+.alignright, .right {
+	&.caption, &.wp-caption, img& {
+		display: block;
+		margin-left: 1em;
+		clear: right;
+	}
+
+	p&, p & {
+		margin: 0;
+	}
+}
+.aligncenter, .center {
+	&.caption, &.wp-caption, img& {
+		display: block;
+		margin: 1em auto;
+		clear: both;
+	}
+
+	p&, p & {
+		margin: 0 auto;
+	}
+
+	text-align: center;
+}
+.gallery-caption {
+}
+.wp-smiley {
+	margin: 0;
+}

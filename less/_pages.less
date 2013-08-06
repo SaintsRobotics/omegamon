@@ -1,0 +1,223 @@
+/* =Content
+-------------------------------------------------------------- */
+
+.sticky {
+}
+.entry-meta {
+	clear: both;
+	display: block;
+}
+.single-author .entry-meta .byline {
+	display: none;
+}
+#content {
+	nav {
+		display: block;
+		overflow: hidden;
+
+		.nav-previous {
+			float: left;
+			width: 50%;
+		}
+		.nav-next {
+			float: right;
+			text-align: right;
+			width: 50%;
+		}
+	}
+	#nav-above {
+		display: none;
+	}
+}
+.paged #content #nav-above,
+.single #content #nav-above {
+	display: block;
+}
+#nav-below {
+	margin: 1em 0 0;
+}
+
+.entry-content {
+	//background: url("../img/robot.png") no-repeat fixed;
+	background: @page-bg-color;
+
+	.row {
+		padding: 30px 0;
+		//background: @page-bg-color;
+	}
+}
+
+/*.page-link {
+	clear: both;
+	margin: 0 0 1em;
+}
+.page .edit-link {
+	clear: both;
+	display: block;
+}*/
+
+/* 404 page */
+.error404 {
+	.widget {
+		float: left;
+		width: 33%;
+
+		.widgettitle, ul {
+			margin-right: 1em;
+		}
+	}
+	.widget_tag_cloud {
+		clear: both;
+		float: none;
+		width: 100%;
+	}
+}
+
+/* Notices */
+.post .notice,
+.error404 #searchform {
+	background: #eee;
+	display: block;
+	padding: 1em;
+}
+
+/* Image Attachments */
+.image-attachment {
+	div.entry-meta {
+		float: left;
+	}
+	nav {
+		float: right;
+		margin: 0 0 1em 0;
+	}
+	.entry-content {
+		clear: both;
+
+		.entry-attachment {
+			background: #eee;
+			margin: 0 0 1em;
+			padding: 1em;
+			text-align: center;
+		}
+		.attachment {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+}
+
+/* Aside Posts */
+.format-aside .entry-content,
+.format-aside .entry-summary {
+	padding-top: 1em;
+
+	.single & {
+		padding-top: 0;
+	}
+}
+
+/* Gallery Posts */
+.format-gallery .gallery-thumb {
+	float: left;
+	margin: 0 1em 0 0;
+}
+
+/* Image Posts */
+.format-image .entry-content,
+.format-image .entry-summary {
+	padding-top: 1em;
+
+	.single & {
+		padding-top: 0;
+	}
+}
+
+
+/* =Forms
+-------------------------------------------------------------- */
+
+#searchform label {
+	display: none;
+}
+#searchform input#s {
+	width: 60%;
+}
+input[type=text],
+input#s {
+	margin: 0 1em 0 0;
+	width: 60%;
+}
+textarea {
+	width: 80%;
+}
+
+/* Class for labelling required form items */
+.required {
+	color: #cc0033;
+}
+
+
+/* =Comments
+-------------------------------------------------------------- */
+
+article.comment {
+	display: block;
+}
+#respond {
+	input[type=text] {
+		display: block;
+		width: 60%;
+	}
+	textarea {
+		display: block;
+		margin: 0 0 1em;
+		width: 80%;
+	}
+	.form-allowed-tags {
+		clear: both;
+		width: 80%;
+
+		code {
+			display: block;
+		}
+	}
+}
+
+
+/* =Widgets
+-------------------------------------------------------------- */
+
+.widget {
+	display: block;
+}
+.widget-area .widget_search {
+	overflow: hidden;
+
+	input {
+		float: left;
+	}
+}
+
+
+/* =Front Page
+-------------------------------------------------------------- */
+
+.front-content {
+	background: @page-bg-color;
+	padding: 30px 0;
+
+	.panel {
+		margin: 0px;
+	}
+}
+
+.announcements {
+	.panel;
+	margin: 10px 0;
+	padding: 15px 20px;
+
+	p {
+		margin: 0;
+	}
+}
