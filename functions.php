@@ -310,9 +310,9 @@ add_filter( 'attachment_link', 'toolbox_enhanced_image_navigation' );
  ***************************************/
 
 // Variables
-$jQueryVersion = '1.9.1';
+$jQueryVersion = '1.10.2';
 $jQueryMigrateVersion = '1.1.1';
-$jQueryUIVersion = '1.10.2';
+$jQueryUIVersion = '1.10.3';
 
 /**
  * Add the latest version of jQuery.
@@ -320,19 +320,18 @@ $jQueryUIVersion = '1.10.2';
 function current_jquery() {
 	global $wp_scripts, $jQueryVersion, $jQueryMigrateVersion;
 
-	if ( ( version_compare( $jQueryVersion, $wp_scripts -> registered[jquery] -> ver ) == 1 ) && !is_admin() ) {
-		wp_deregister_script('jquery'); 
+	// Overwrite the existing version of jQuery, regardless of whether it is more up-to-date
+	wp_deregister_script('jquery'); 
 
-		wp_register_script( 'jquery',
-			'https://ajax.aspnetcdn.com/ajax/jQuery/jquery-'.$jQueryVersion.'.min.js',
-			false, $jQueryVersion );
+	wp_register_script( 'jquery',
+		'https://ajax.aspnetcdn.com/ajax/jQuery/jquery-'.$jQueryVersion.'.min.js',
+		false, $jQueryVersion );
 
-		// Use jQuery migrate
-		if ( ((float) $jQueryVersion) >= 1.9 ) {
-			wp_enqueue_script( 'jquery-migrate',
-				'https://ajax.aspnetcdn.com/ajax/jquery.migrate/jquery-migrate-'.$jQueryMigrateVersion.'.min.js',
-				array( 'jquery' ), $jQueryMigrateVersion );
-		}
+	// Use jQuery migrate
+	if ( ((float) $jQueryVersion) >= 1.9 ) {
+		wp_enqueue_script( 'jquery-migrate',
+			'https://ajax.aspnetcdn.com/ajax/jquery.migrate/jquery-migrate-'.$jQueryMigrateVersion.'.min.js',
+			array( 'jquery' ), $jQueryMigrateVersion );
 	}
 }
 
