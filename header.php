@@ -40,7 +40,7 @@
 	?></title>
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" media="all" href="<?php echo get_template_directory_uri(); ?>/css/app.css" />
+<link rel="stylesheet" media="all" href="<?php echo get_template_directory_uri(); ?>/css/app.css?v=2" />
 
 <!-- Nivo Slider -->
 <link rel="stylesheet" media="all" href="<?php echo get_template_directory_uri(); ?>/css/nivo-slider/themes/dark/dark.css" />
