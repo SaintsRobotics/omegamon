@@ -10,13 +10,6 @@ get_header(); ?>
 
 		<div id="primary">
 			<div id="content" role="main">
-				<!-- Summer camp notice -->
-				<div class="row">
-					<div class="twelve columns announcements">
-						<p>This summer, we are holding <em>two</em> summer camps targeting rising 4th&ndash;6th graders! One will be held at <strong>Highland Middle School</strong> from <strong>July 22&ndash;26</strong>, and the other will be held at <strong>Ardmore Elementary</strong> from <strong>August 5&ndash;9</strong>. If you are interested, please contact us by emailing <a href="mailto:publicrelations@saintsrobotics.com">publicrelations@saintsrobotics.com</a>.</p>
-					</div>
-				</div>
-
 				<!-- Slideshow -->
 				<div class="slider-wrapper theme-dark">
 					<div id="slider" class="nivoSlider row">
