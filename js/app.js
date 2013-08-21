@@ -48,19 +48,23 @@
 	});
 
 	// Fade in/out animation for menu bar
-	$("#access").find(".menu li a")
-		.mouseenter(function (event) {
-			$(this).data("hover", setTimeout(function () {
-				$(this).animate({
-					backgroundColor: "rgba(16, 87, 165, 0.85)"
-				}, {
-					duration: 200,
-					easing: "swing"
-				});
-			}, 50));
+	$("#access").find(".menu").find("li a")
+		.on("mouseenter", function (event) {
+			var that = this,
+				timeoutID = setTimeout(function () {
+					$(that).animate({
+						backgroundColor: "rgba(16, 87, 165, 0.85)"
+					}, {
+						duration: 200,
+						easing: "swing"
+					});
+				}, 50);
+
+			$(this).data("hover", timeoutID);
 		})
-		.mouseleave(function (event) {
-			clearTimeout($(this).data("hover"));
+		.on("mouseleave", function (event) {
+			var timeoutID = $(this).data("hover");
+			clearTimeout(timeoutID);
 
 			$(this).animate({
 				backgroundColor: "transparent"

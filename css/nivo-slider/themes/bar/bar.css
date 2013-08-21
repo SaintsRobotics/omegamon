@@ -13,17 +13,17 @@ Supports Thumbs: false
     border: 1px solid #333;
     overflow: hidden;
 }
-.theme-bar .nivoSlider {
+.theme-bar .nivo-slider {
 	position:relative;
 	background:#fff url(loading.gif) no-repeat 50% 50%;
 }
-.theme-bar .nivoSlider img {
+.theme-bar .nivo-slider img {
 	position:absolute;
 	top:0px;
 	left:0px;
 	display:none;
 }
-.theme-bar .nivoSlider a {
+.theme-bar .nivo-slider a {
 	border:0;
 	display:block;
 }

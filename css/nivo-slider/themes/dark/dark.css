@@ -13,19 +13,19 @@ Supports Thumbs: true
     /*padding: 10px;*/
     padding: 20px 10px;
 }
-.theme-dark .nivoSlider {
+.theme-dark .nivo-slider {
 	position:relative;
 	background:#fff url(loading.gif) no-repeat 50% 50%;
     margin-bottom:10px;
     overflow: visible;
 }
-.theme-dark .nivoSlider img {
+.theme-dark .nivo-slider img {
 	position:absolute;
 	top:0px;
 	left:0px;
 	display:none;
 }
-.theme-dark .nivoSlider a {
+.theme-dark .nivo-slider a {
 	border:0;
 	display:block;
 }

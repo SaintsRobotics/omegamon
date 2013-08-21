@@ -8,7 +8,7 @@ Author URI: http://dev7studios.com
 Supports Thumbs: true
 */
 
-.theme-default .nivoSlider {
+.theme-default .nivo-slider {
 	position:relative;
 	background:#fff url(loading.gif) no-repeat 50% 50%;
     margin-bottom:10px;
@@ -16,13 +16,13 @@ Supports Thumbs: true
     -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
     box-shadow: 0px 1px 5px 0px #4a4a4a;
 }
-.theme-default .nivoSlider img {
+.theme-default .nivo-slider img {
 	position:absolute;
 	top:0px;
 	left:0px;
 	display:none;
 }
-.theme-default .nivoSlider a {
+.theme-default .nivo-slider a {
 	border:0;
 	display:block;
 }
