@@ -40,11 +40,10 @@
 		});
 	}
 
-	// Nivo Slider
-	$(window).load(function () {
-		$(".js-nivo-slider").nivoSlider({
-			pauseTime: 4000
-		});
+	// Unslider
+	$('.slider').unslider({
+		delay: 7000,
+		dots: true
 	});
 
 	// Fade in/out animation for menu bar

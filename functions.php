@@ -369,8 +369,8 @@ function footer_scripts() {
 		get_template_directory_uri().'/js/foundation/foundation.modified.min.js',
 		array( 'jquery' ), '3', true );
 	wp_enqueue_script( 'nivo-slider',
-		get_template_directory_uri().'/js/nivo-slider/jquery.nivo.slider.pack.js',
-		array( 'jquery' ), '3.2', true );
+		get_template_directory_uri().'/js/unslider.min.js',
+		array( 'jquery' ), '1', true );
 	wp_enqueue_script( 'lightbox',
 		get_template_directory_uri().'/js/lightbox.js',
 		array( 'jquery' ), '2.51', true );

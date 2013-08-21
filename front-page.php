@@ -11,17 +11,15 @@ get_header(); ?>
 		<div id="primary">
 			<div id="content" role="main">
 				<!-- Slideshow -->
-				<div class="slider-wrapper theme-dark">
-					<div class="row">
-						<div class="twelve columns">
-							<div class="nivo-slider js-nivo-slider">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/slideshow/2013/robot-blue-crop.jpg" alt="" />
-								<img src="<?php echo get_template_directory_uri(); ?>/img/slideshow/2013/robot-red-crop.jpg" alt="" />
-								<img src="<?php echo get_template_directory_uri(); ?>/img/slideshow/2013/build-season-crop.jpg" alt="" />
-								<img src="<?php echo get_template_directory_uri(); ?>/img/slideshow/2013/drive-team-crop.jpg" alt="" />
-								<img src="<?php echo get_template_directory_uri(); ?>/img/slideshow/2013/northwest-harvest-crop.jpg" alt="" />
-							</div>
-						</div>
+				<div class="slider-wrapper">
+					<div class="slider">
+						<ul>
+							<li style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slideshow/2013/robot-blue-small.jpg');"></li>
+							<li style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slideshow/2013/robot-red-small.jpg');"></li>
+							<li style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slideshow/2013/build-season-small.jpg');"></li>
+							<li style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slideshow/2013/drive-team-small.jpg');"></li>
+							<li style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slideshow/2013/northwest-harvest-small.jpg');"></li>
+						</ul>
 					</div>
 				</div>
 
