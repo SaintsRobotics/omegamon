@@ -42,7 +42,7 @@
 
 	// Nivo Slider
 	$(window).load(function () {
-		$("#slider").nivoSlider({
+		$(".js-nivo-slider").nivoSlider({
 			pauseTime: 4000
 		});
 	});
