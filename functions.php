@@ -376,6 +376,6 @@ function footer_scripts() {
 		array( 'jquery' ), '2.51', true );
 	wp_enqueue_script( 'website',
 		get_template_directory_uri().'/js/app.js',
-		array( 'jquery', 'foundation', 'nivo-slider', 'lightbox' ), '1.0', true );
+		array( 'jquery', 'jquery-ui', 'foundation', 'nivo-slider', 'lightbox' ), '1.0', true );
 }
 add_action( 'wp_enqueue_scripts', footer_scripts() );
