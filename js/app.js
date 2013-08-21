@@ -42,7 +42,7 @@
 
 	// Unslider
 	$('.slider').unslider({
-		delay: 7000,
+		delay: 5000,
 		dots: true
 	});
 
