@@ -43,10 +43,10 @@ get_header(); ?>
 						</div>
 						<div class="four columns infobox">
 							<h2 class="infobox-title">
-								Current FRC Competition: Ultimate Ascent
+								FRC Competition
 							</h2>
 							<div class="infobox-content">
-								This year's competition, <a href="/first/2013-competition/" title="2013 Competition: Ultimate Ascent">Ultimate Ascent</a>, is a combination of ultimate frisbee and ascending a pyramid. Two teams of three alliances each aim to outscore the other by earning as many points as possible in the autonomous and teleoperated periods of a match.
+								This year's FRC competition, <a href="/first/2013-competition/" title="2013 Competition: Ultimate Ascent">Ultimate Ascent</a>, is a combination of ultimate frisbee and ascending a pyramid. Two teams of three alliances each aim to outscore the other by earning as many points as possible in the autonomous and teleoperated periods of a match.
 							</div>
 						</div>
 						<div class="four columns infobox">
@@ -54,7 +54,7 @@ get_header(); ?>
 								Helping Hounds
 							</h2>
 							<div class="infobox-content">
-								Our <a href="/community/" title="Helping Hounds Program">Helping Hounds Program</a> is our club's community service program. Through various fundraisers, science fairs, and other outreach activities, we have actively promoted STEM in our community and beyond.
+								Our <a href="/community/" title="Helping Hounds Program">Helping Hounds Program</a> is our club's community service program. Through various demonstrations, <a href="/community/stemming-knowledge/#Science_Fairs" title="Science Fairs">science fairs</a>, and other outreach activities, we have actively promoted STEM in our community and beyond. Our goal is to encourage and inspire students to pursue future careers in STEM.
 							</div>
 						</div>
 					</div>
