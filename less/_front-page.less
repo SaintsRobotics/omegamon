@@ -66,7 +66,12 @@
 }
 
 .front-content {
+	background: @page-bg-color;
 	padding: 30px 0 10px;
+
+	.panel {
+		margin: 0px;
+	}
 
 	.infobox {
 		padding: 20px;
@@ -78,5 +83,15 @@
 
 	.row {
 		margin: 10px auto 30px;
+	}
+}
+
+.announcements {
+	.panel;
+	margin: 10px 0;
+	padding: 15px 20px;
+
+	p {
+		margin: 0;
 	}
 }
