@@ -20,9 +20,9 @@
 		<div class="row">
 			<div class="twelve columns">
 				<?php the_content(); ?>
+				<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'toolbox' ), 'after' => '</div>' ) ); ?>
+				<?php //edit_post_link( __( 'Edit', 'toolbox' ), '<span class="edit-link">', '</span>' ); ?>
 			</div>
-			<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'toolbox' ), 'after' => '</div>' ) ); ?>
-			<?php //edit_post_link( __( 'Edit', 'toolbox' ), '<span class="edit-link">', '</span>' ); ?>
 		</div>
 	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->
