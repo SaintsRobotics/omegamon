@@ -1,6 +1,5 @@
 /**
- * The actual custom JavaScript for the website,
- * v1.0.
+ * The actual custom JavaScript for the website.
  */
 ;(function ($, window, undefined) {
 	"use strict";
