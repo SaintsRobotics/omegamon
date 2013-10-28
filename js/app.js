@@ -74,7 +74,7 @@
 
 
 	// Google Analytics
-	var _gaq = window._gaq || [];
+	var _qaq = window._gaq = window._gaq || [];
 	_gaq.push(['_setAccount', 'UA-20132041-1']);
 	_gaq.push(['_setDomainName', 'saintsrobotics.com']);
 	_gaq.push(['_trackPageview']);
