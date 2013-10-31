@@ -48,9 +48,9 @@
 	// Fade in/out animation for menu bar
 	$("#access").find(".menu").find("li a")
 		.on("mouseenter", function(event) {
-			var that = this,
+			var $this = $(this),
 				timeoutID = setTimeout(function() {
-					$(that).animate({
+					$this.animate({
 						backgroundColor: "rgba(16, 87, 165, 0.85)"
 					}, {
 						duration: 200,
@@ -58,13 +58,15 @@
 					});
 				}, 50);
 
-			$(this).data("hover", timeoutID);
+			$this.data("hover", timeoutID);
 		})
 		.on("mouseleave", function(event) {
-			var timeoutID = $(this).data("hover");
+			var $this = $(this),
+				timeoutID = $this.data("hover");
+
 			clearTimeout(timeoutID);
 
-			$(this).animate({
+			$this.animate({
 				backgroundColor: "transparent"
 			}, {
 				duration: 200,
