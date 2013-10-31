@@ -328,7 +328,9 @@ function current_jquery() {
 		false, $jQueryVersion );
 
 	// Use jQuery migrate
-	if ( ((float) $jQueryVersion) >= 1.9 ) {
+	$jQueryVersionArray = explode( '.', $jQueryVersion );
+
+	if ( ((int) $jQueryVersionArray[0]) >= 1 && ((int) $jQueryVersionArray[1] >= 9) ) {
 		wp_enqueue_script( 'jquery-migrate',
 			'https://ajax.aspnetcdn.com/ajax/jquery.migrate/jquery-migrate-'.$jQueryMigrateVersion.'.min.js',
 			array( 'jquery' ), $jQueryMigrateVersion );
