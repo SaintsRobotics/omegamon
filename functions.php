@@ -355,7 +355,7 @@ add_action( 'wp_enqueue_styles', header_styles() );
 function header_scripts() {
 	global $jQueryUIVersion;
 
-	current_jquery();
+	// current_jquery();
 
 	wp_enqueue_script( 'jquery-ui',
 		'https://ajax.aspnetcdn.com/ajax/jquery.ui/'.$jQueryUIVersion.'/jquery-ui.min.js',
