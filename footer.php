@@ -22,7 +22,7 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<?php wp_footer(); // All the JavaScript is in functions.php ?>
+<?php wp_footer(); // JavaScript files are located in functions.php ?>
 
 </body>
 </html>
