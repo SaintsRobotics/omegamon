@@ -13,10 +13,14 @@
 
 	<footer id="colophon" role="contentinfo">
 		<div class="row">
-			<div class="twelve columns">
+			<div class="eight columns">
 				<small class="copyright">
 					&copy;&nbsp;<?php echo date('Y'); ?> Saints Robotics. All rights reserved.
 				</small>
+			</div>
+			<div class="four columns footer-icons">
+				<a class="webicon facebook" href="https://www.facebook.com/saintsrobotics">Facebook</a>
+				<a class="webicon twitter" href="https://twitter.com/sr1899">Twitter</a>
 			</div>
 		</div>
 	</footer><!-- #colophon -->
