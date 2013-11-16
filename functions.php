@@ -381,3 +381,9 @@ function footer_scripts() {
 		array( 'jquery', 'jquery-ui', 'foundation', 'nivo-slider', 'lightbox' ), '1.1.4', true );
 }
 add_action( 'wp_enqueue_scripts', footer_scripts() );
+
+function page_menu_args( $args ) {
+	$args[ 'show_home' ] = false;
+	return $args;
+}
+add_action( 'wp_page_menu_args', 'page_menu_args' );

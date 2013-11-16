@@ -64,7 +64,11 @@
 				<h1 class="assistive-text section-heading"><?php _e( 'Main menu', 'toolbox' ); ?></h1>
 				<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'toolbox' ); ?>"><?php _e( 'Skip to content', 'toolbox' ); ?></a></div>
 
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'depth' => 1 ) ); ?>
+				<?php
+					// Hide the front page from the navbar
+					$frontPageID = get_page_by_title( 'Front Page' )->ID;
+					wp_nav_menu( array( 'theme_location' => 'primary', 'depth' => 1, 'exclude' => $frontPageID ) );
+				?>
 			</nav><!-- #access -->
 		</div><!-- .row -->
 	</header><!-- #branding -->
