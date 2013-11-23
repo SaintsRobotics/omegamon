@@ -1,7 +1,7 @@
 omegamon
 ========
 
-omegamon is a WordPress theme developed by Saints Robotics for the 2012&ndash;2013 season. Feel free to re-use it for your own website!
+omegamon is a WordPress theme developed and used by [Saints Robotics](http://www.saintsrobotics.com/) for the 2012&ndash;2013 season. Feel free to re-use it for your own website!
 
 
 Installing
