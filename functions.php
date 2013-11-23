@@ -389,14 +389,13 @@ add_action( 'wp_enqueue_scripts', footer_scripts() );
  * Add scripts just for the front page.
  */
 function front_page_scripts() {
-	wp_enqueue_script( 'front-page',
-		get_template_directory_uri().'/js/front-page.js',
-		array( 'website' ), '1.0.0', true );
+	if ( is_front_page() ) {
+		wp_enqueue_script( 'front-page',
+			get_template_directory_uri().'/js/front-page.js',
+			array( 'website' ), '1.0.0', true );
+	}
 }
-
-if ( is_front_page() ) {
-	add_action( 'wp_enqueue_scripts', front_page_scripts() );
-}
+add_action( 'wp_enqueue_scripts', front_page_scripts() );
 
 function page_menu_args( $args ) {
 	$args[ 'show_home' ] = false;
