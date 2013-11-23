@@ -13,8 +13,9 @@
 	// Google Maps
 	function initGoogleMaps() {
 		// Interlake High School
-		var latLng = new google.maps.LatLng(-122.123456,47.629266),
+		var center = new google.maps.LatLng(47.629266, -122.123456),
 			mapOptions = {
+				center: center,
 				zoom: 8
 			},
 
