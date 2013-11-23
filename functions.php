@@ -347,7 +347,7 @@ function header_styles() {
 		'https://ajax.aspnetcdn.com/ajax/jquery.ui/'.$jQueryUIVersion.'/themes/smoothness/jquery-ui.css',
 		false, $jQueryUIVersion );
 }
-add_action( 'wp_enqueue_styles', header_styles() );
+add_action( 'wp_enqueue_styles', 'header_styles' );
 
 /**
  * Add scripts to the header.
@@ -361,7 +361,7 @@ function header_scripts() {
 		'https://ajax.aspnetcdn.com/ajax/jquery.ui/'.$jQueryUIVersion.'/jquery-ui.min.js',
 		array( 'jquery' ), $jQueryUIVersion );
 }
-add_action( 'wp_enqueue_scripts', header_scripts() );
+add_action( 'wp_enqueue_scripts', 'header_scripts' );
 
 /**
  * Add scripts to the footer.
@@ -383,7 +383,7 @@ function footer_scripts() {
 		get_template_directory_uri().'/js/app.js',
 		array( 'jquery', 'jquery-ui', 'foundation', 'unslider', 'lightbox', 'google-maps' ), '1.1.5', true );
 }
-add_action( 'wp_enqueue_scripts', footer_scripts() );
+add_action( 'wp_enqueue_scripts', 'footer_scripts' );
 
 /**
  * Add scripts just for the front page.
@@ -395,8 +395,11 @@ function front_page_scripts() {
 			array( 'website' ), '1.0.0', true );
 	}
 }
-add_action( 'wp_enqueue_scripts', front_page_scripts() );
+add_action( 'wp_enqueue_scripts', 'front_page_scripts' );
 
+/**
+ * Hide the Home link from the menu bar.
+ */
 function page_menu_args( $args ) {
 	$args[ 'show_home' ] = false;
 	return $args;
