@@ -370,20 +370,33 @@ function footer_scripts() {
 	wp_enqueue_script( 'foundation',
 		get_template_directory_uri().'/js/foundation/foundation.modified.min.js',
 		array( 'jquery' ), '3', true );
-	wp_enqueue_script( 'nivo-slider',
+	wp_enqueue_script( 'unslider',
 		get_template_directory_uri().'/js/unslider.min.js',
 		array( 'jquery' ), '1', true );
 	wp_enqueue_script( 'lightbox',
 		get_template_directory_uri().'/js/lightbox.js',
 		array( 'jquery' ), '2.51', true );
 	wp_enqueue_script( 'google-maps',
-		'https://maps.googleapis.com/maps/api/js?key=AIzaSyDO9YQ20RShLL1fAXv6oib7fWqZV41bdKk&sensor=false',
-		false, '3', true );
+		'https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDO9YQ20RShLL1fAXv6oib7fWqZV41bdKk&sensor=false',
+		false, null, true );
 	wp_enqueue_script( 'website',
 		get_template_directory_uri().'/js/app.js',
-		array( 'jquery', 'jquery-ui', 'foundation', 'nivo-slider', 'lightbox' ), '1.1.4', true );
+		array( 'jquery', 'jquery-ui', 'foundation', 'unslider', 'lightbox', 'google-maps' ), '1.1.5', true );
 }
 add_action( 'wp_enqueue_scripts', footer_scripts() );
+
+/**
+ * Add scripts just for the front page.
+ */
+function front_page_scripts() {
+	wp_enqueue_script( 'front-page',
+		get_template_directory_uri().'/js/front-page.js',
+		array( 'website' ), '1.0.0', true );
+}
+
+if ( is_front_page() ) {
+	add_action( 'wp_enqueue_scripts', front_page_scripts() );
+}
 
 function page_menu_args( $args ) {
 	$args[ 'show_home' ] = false;

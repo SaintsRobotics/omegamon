@@ -6,9 +6,9 @@
 
 	// Foundation
 	var $doc = $(document),
-	    Modernizr = window.Modernizr;
+		Modernizr = window.Modernizr;
 
-	$(function () {
+	$(function() {
 		$.fn.foundationAlerts           ? $doc.foundationAlerts() : null;
 		$.fn.foundationButtons          ? $doc.foundationButtons() : null;
 		$.fn.foundationAccordion        ? $doc.foundationAccordion() : null;
@@ -32,18 +32,12 @@
 
 	// Hide address bar on mobile devices (except if #hash present, so we don't mess up deep linking).
 	if (Modernizr.touch && !window.location.hash) {
-		$(window).load(function () {
-			setTimeout(function () {
+		$(window).load(function() {
+			setTimeout(function() {
 				window.scrollTo(0, 1);
 			}, 0);
 		});
 	}
-
-	// Unslider
-	$('.slider').unslider({
-		delay: 5000,
-		dots: true
-	});
 
 	// Fade in/out animation for menu bar
 	$("#access").find(".menu").find("li a")
