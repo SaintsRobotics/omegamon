@@ -25,7 +25,7 @@ get_header(); ?>
 
 				<div class="front-content">
 					<div class="row">
-						<div class="eight columns infobox">
+						<div class="six columns infobox">
 							<h2 class="infobox-title">
 								About
 							</h2>
@@ -33,7 +33,7 @@ get_header(); ?>
 								We are <strong>Saints Robotics</strong>, team 1899, a <a href="/first/about/" title="About FIRST"><i>FIRST</i></a> Robotics Competition (FRC) team based out of Interlake High School in Bellevue, Washington. We strive to engage students in the areas of science, technology, engineering, and mathematics (STEM) by allowing them to work on the construction of physical robots.
 							</div>
 						</div>
-						<div class="four columns">
+						<div class="six columns">
 							<div id="js-google-maps-school"></div>
 						</div>
 					</div>
