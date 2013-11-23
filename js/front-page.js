@@ -16,7 +16,7 @@
 		var center = new google.maps.LatLng(47.629266, -122.123456),
 			mapOptions = {
 				center: center,
-				zoom: 8
+				zoom: 15
 			},
 
 			map = new google.maps.Map(document.getElementById("js-google-maps-school"),
