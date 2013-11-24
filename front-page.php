@@ -25,15 +25,12 @@ get_header(); ?>
 
 				<div class="front-content">
 					<div class="row">
-						<div class="four columns infobox">
-							<h2 class="infobox-title">
-								About
-							</h2>
-							<div class="infobox-content">
-								We are <strong>Saints Robotics</strong>, team 1899, a <a href="/first/about/" title="About FIRST"><i>FIRST</i></a> Robotics Competition (FRC) team based out of Interlake High School in Bellevue, Washington. We strive to engage students in the areas of science, technology, engineering, and mathematics (STEM) by allowing them to work on the construction of physical robots.
+						<div class="four columns">
+							<div class="front-primary">
+								We are <strong>Saints Robotics</strong>, <strong>Team 1899</strong>, a <strong><a href="/first/about/"><i>FIRST</i></a> Robotics Competition</strong> team based out of Interlake High School in <strong>Bellevue, Washington</strong>. We strive to engage students in the areas of science, technology, engineering, and mathematics by allowing them to work on the construction of physical robots.
 							</div>
 						</div>
-						<div class="eight columns infobox">
+						<div class="eight columns">
 							<div id="js-google-maps-school" class="google-maps google-maps-school"></div>
 						</div>
 					</div>
@@ -51,7 +48,7 @@ get_header(); ?>
 								FRC Competition
 							</h2>
 							<div class="infobox-content">
-								This year's FRC competition, <a href="/first/2013-competition/" title="2013 Competition: Ultimate Ascent">Ultimate Ascent</a>, is a combination of ultimate frisbee and ascending a pyramid. Two teams of three alliances each aim to outscore the other by earning as many points as possible in the autonomous and teleoperated periods of a match.
+								This year's <i>FIRST</i></a> Robotics Competition (FRC) game, <a href="/first/2013-competition/">Ultimate Ascent</a>, is a combination of ultimate frisbee and ascending a pyramid. Two teams of three alliances each aim to outscore the other by earning as many points as possible in the autonomous and teleoperated periods of a match.
 							</div>
 						</div>
 						<div class="four columns infobox">
@@ -59,7 +56,7 @@ get_header(); ?>
 								Helping Hounds
 							</h2>
 							<div class="infobox-content">
-								Our <a href="/community/" title="Helping Hounds Program">Helping Hounds Program</a> is our club's community service program. Through various demonstrations, <a href="/community/stemming-knowledge/#Science_Fairs" title="Science Fairs">science fairs</a>, and other outreach activities, we have actively promoted STEM in our community and beyond. Our goal is to encourage and inspire students to pursue future careers in STEM.
+								Our <a href="/community/">Helping Hounds Program</a> is our club's community service program. Through various demonstrations, <a href="/community/stemming-knowledge/#Science_Fairs">science fairs</a>, and other outreach activities, we have actively promoted STEM in our community and beyond. Our goal is to encourage and inspire students to pursue future careers in STEM.
 							</div>
 						</div>
 					</div>
