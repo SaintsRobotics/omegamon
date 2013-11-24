@@ -40,7 +40,7 @@
 	?></title>
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" media="all" href="<?php echo get_template_directory_uri(); ?>/css/app.css?v=2.1.6" />
+<link rel="stylesheet" media="all" href="<?php echo get_template_directory_uri(); ?>/css/app.css?v=2.1.7" />
 
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
