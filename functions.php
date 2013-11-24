@@ -392,7 +392,7 @@ function front_page_scripts() {
 	if ( is_front_page() ) {
 		wp_enqueue_script( 'front-page',
 			get_template_directory_uri().'/js/front-page.js',
-			array( 'website' ), '1.0.2', true );
+			array( 'website' ), '1.0.3', true );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'front_page_scripts' );

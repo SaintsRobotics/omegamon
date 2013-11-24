@@ -13,14 +13,20 @@
 	// Google Maps
 	function initGoogleMaps() {
 		// Interlake High School
-		var center = new google.maps.LatLng(47.629266, -122.123456),
+		var interlakeLatLng = new google.maps.LatLng(47.629266, -122.123456),
 			mapOptions = {
-				center: center,
-				zoom: 15
+				center: interlakeLatLng,
+				zoom: 14
 			},
 
 			map = new google.maps.Map(document.getElementById("js-google-maps-school"),
-				mapOptions);
+				mapOptions),
+
+			marker = new google.maps.Marker({
+				position: interlakeLatLng,
+				map: map,
+				title: "Interlake High School"
+			});
 	}
 
 	$(function() {
