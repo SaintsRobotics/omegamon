@@ -21,6 +21,7 @@
 			<div class="four columns footer-icons">
 				<a class="webicon facebook" href="https://www.facebook.com/saintsrobotics">Facebook</a>
 				<a class="webicon twitter" href="https://twitter.com/sr1899">Twitter</a>
+				<a class="webicon youtube" href="https://www.youtube.com/user/sr1899">YouTube</a>
 				<a class="webicon github" href="https://github.com/SaintsRobotics">GitHub</a>
 			</div>
 		</div>
