@@ -87,9 +87,15 @@
 	}
 }
 
-.front-primary {
+.front-primary-wrapper {
+	display: flex;
+	align-items: center;
 	text-align: center;
+}
+
+.front-primary {
 	font-size: 18px;
+	min-height: 4 * @column-width;
 }
 
 .announcements {
@@ -110,6 +116,6 @@
 }
 
 .google-maps-school {
-	width: 640px;
-	height: 320px;
+	width: 8 * @column-width;
+	height: 4 * @column-width;
 }

@@ -25,7 +25,7 @@ get_header(); ?>
 
 				<div class="front-content">
 					<div class="row">
-						<div class="four columns">
+						<div class="four columns front-primary-wrapper">
 							<div class="front-primary">
 								We are <strong>Saints Robotics</strong>, <strong>Team 1899</strong>, a <strong><a href="/first/about/"><i>FIRST</i></a> Robotics Competition</strong> team based out of Interlake High School in <strong>Bellevue, Washington</strong>. We strive to engage students in the areas of science, technology, engineering, and mathematics by allowing them to work on the construction of physical robots.
 							</div>
