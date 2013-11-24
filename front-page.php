@@ -34,7 +34,7 @@ get_header(); ?>
 							</div>
 						</div>
 						<div class="eight columns infobox">
-							<div id="js-google-maps-school" class="google-maps-school"></div>
+							<div id="js-google-maps-school" class="google-maps google-maps-school"></div>
 						</div>
 					</div>
 					<div class="row">
