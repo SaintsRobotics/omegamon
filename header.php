@@ -8,11 +8,11 @@
  * @since Toolbox 0.1
  */
 ?><!DOCTYPE html>
-<!--[if lt IE 7 ]> <html class="ie6" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie7" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie8" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie9" <?php language_attributes(); ?>> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html class="" <?php language_attributes(); ?>> <!--<![endif]-->
+<!--[if lt IE 7 ]> <html class="no-js ie6" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9" <?php language_attributes(); ?>> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
