@@ -48,7 +48,7 @@ get_header(); ?>
 								FRC Competition
 							</h2>
 							<div class="infobox-content">
-								This year's <i>FIRST</i></a> Robotics Competition (FRC) game, <a href="/first/2013-competition/">Ultimate Ascent</a>, is a combination of ultimate frisbee and ascending a pyramid. Two teams of three alliances each aim to outscore the other by earning as many points as possible in the autonomous and teleoperated periods of a match.
+								This year's <i>FIRST</i> Robotics Competition (FRC) game, <a href="/first/2013-competition/">Ultimate Ascent</a>, is a combination of ultimate frisbee and ascending a pyramid. Two teams of three alliances each aim to outscore the other by earning as many points as possible in the autonomous and teleoperated periods of a match.
 							</div>
 						</div>
 						<div class="four columns infobox">
