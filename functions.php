@@ -389,7 +389,7 @@ function front_page_scripts() {
 	if ( is_front_page() ) {
 		wp_enqueue_script( 'unslider',
 			get_template_directory_uri().'/js/unslider.min.js',
-			array( 'jquery' ), '1.0.1', true );
+			array( 'jquery' ), '1.0.2', true );
 		wp_enqueue_script( 'front-page',
 			get_template_directory_uri().'/js/front-page.js',
 			array( 'website', 'unslider', 'google-maps' ), '1.0.3', true );
