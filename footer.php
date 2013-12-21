@@ -17,6 +17,9 @@
 				<small class="copyright">
 					&copy;&nbsp;<?php echo date('Y'); ?> Saints Robotics. All rights reserved.
 				</small>
+				<small>
+					Please feel free to <a href="/about/contact-us/">contact us</a>.
+				</small>
 			</div>
 			<div class="four columns footer-icons">
 				<a class="webicon facebook" href="https://www.facebook.com/saintsrobotics">Facebook</a>
