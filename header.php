@@ -2,7 +2,7 @@
 /**
  * The Header for our theme.
  *
- * Displays all of the <head> section and everything up till <div id="main">
+ * Displays all of the <head> section and everything up till <main id="main">
  *
  * @package Toolbox
  * @since Toolbox 0.1
@@ -76,4 +76,4 @@
 	<!-- Ensure that header doesn't overlay other content at top of page -->
 	<div class="header-flow"></div>
 
-	<div id="main">
+	<main id="main">
