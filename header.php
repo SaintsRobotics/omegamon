@@ -57,11 +57,11 @@
 <?php do_action( 'before' ); ?>
 	<header id="branding" role="banner">
 		<div class="row">
-			<div class="four columns">
+			<div class="five columns">
 				<h1 id="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			</div>
 
-			<nav id="access" class="eight columns" role="navigation">
+			<nav id="access" class="seven columns" role="navigation">
 				<h1 class="assistive-text section-heading"><?php _e( 'Main menu', 'toolbox' ); ?></h1>
 				<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'toolbox' ); ?>"><?php _e( 'Skip to content', 'toolbox' ); ?></a></div>
 
