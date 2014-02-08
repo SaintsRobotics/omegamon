@@ -378,7 +378,7 @@ function footer_scripts() {
 		false, null, true );
 	wp_enqueue_script( 'website',
 		get_template_directory_uri().'/js/app.js',
-		array( 'jquery', 'jquery-ui', 'foundation', 'lightbox', 'google-maps' ), '1.1.5', true );
+		array( 'jquery', 'jquery-ui', 'foundation', 'lightbox', 'google-maps' ), '1.1.6', true );
 }
 add_action( 'wp_enqueue_scripts', 'footer_scripts' );
 
