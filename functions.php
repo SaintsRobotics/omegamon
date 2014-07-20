@@ -310,9 +310,9 @@ add_filter( 'attachment_link', 'toolbox_enhanced_image_navigation' );
  ***************************************/
 
 // Variables
-$jQueryVersion = '1.10.2';
+$jQueryVersion = '1.11.1';
 $jQueryMigrateVersion = '1.2.1';
-$jQueryUIVersion = '1.10.3';
+$jQueryUIVersion = '1.11.0';
 
 /**
  * Add the latest version of jQuery.
