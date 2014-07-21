@@ -371,8 +371,8 @@ add_action( 'wp_enqueue_scripts', 'header_scripts' );
  */
 function footer_scripts() {
 	wp_enqueue_script( 'lightbox',
-		get_template_directory_uri().'/js/lightbox.js',
-		array( 'jquery' ), '2.51', true );
+		get_template_directory_uri().'/js/lightbox.min.js',
+		array( 'jquery' ), '2.7.1', true );
 	wp_enqueue_script( 'google-maps',
 		'https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDO9YQ20RShLL1fAXv6oib7fWqZV41bdKk&sensor=false',
 		false, null, true );
