@@ -370,11 +370,13 @@ add_action( 'wp_enqueue_scripts', 'header_scripts' );
  * Add scripts to the footer.
  */
 function footer_scripts() {
+	$GOOGLE_MAPS_API_KEY = 'AIzaSyDO9YQ20RShLL1fAXv6oib7fWqZV41bdKk';
+
 	wp_enqueue_script( 'lightbox',
 		get_template_directory_uri().'/js/lightbox.min.js',
 		array( 'jquery' ), '2.7.1', true );
 	wp_enqueue_script( 'google-maps',
-		'https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDO9YQ20RShLL1fAXv6oib7fWqZV41bdKk&sensor=false',
+		'https://maps.googleapis.com/maps/api/js?v=3&key=' . $GOOGLE_MAPS_API_KEY . '&sensor=false',
 		false, null, true );
 	wp_enqueue_script( 'website',
 		get_template_directory_uri().'/js/app.js',
